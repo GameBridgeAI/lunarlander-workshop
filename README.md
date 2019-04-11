@@ -16,7 +16,7 @@ Python 3.6
 ### Jupyter Notebook - Local Machine Ubuntu Linux 18.04
 Follow these steps to install on a local machine 
 
-### JupyterHub - Remote Server Ubuntu Linux 1804
+### JupyterHub - Remote Server Ubuntu Linux 18.04
 Follow these steps to install on a remotely hostly machine 
 
 
