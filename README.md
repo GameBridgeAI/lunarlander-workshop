@@ -1,5 +1,5 @@
 
-![alt text][images/LunarLanderBanner.png]
+![Lunar Lander Workshop](images/LunarLanderBanner.png)
 
 # Lunar Lander Workshop
 
