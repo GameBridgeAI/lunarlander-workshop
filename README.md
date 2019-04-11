@@ -2,7 +2,7 @@
 
 This repo contains an education workshop developed to allow students to build an understanding of reinforced learning. In the workshop the students learn aspects of machine learning required to land a lunar lander which is part of the OpenAI Gym environment. Step by step they can build an AI and see it working. The workshop takes around 2 hours and is intended to be run on Chromebooks. 
 
-In addition there is a particular focus on how to measure the 'fitness' of this AI. 
+In addition there is a particular focus on how to measure the 'fitness' of the resulting AI. 
 
 
 ## Installation
