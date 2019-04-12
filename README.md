@@ -72,3 +72,7 @@ Install Notebook
 Install the OpenAI Gym stuff and our notebook dependancies
 
 `pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets`
+
+Now add to your .bashrc file
+
+export PATH=$PATH:~/.local/bin/
