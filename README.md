@@ -13,8 +13,13 @@ In addition there is a particular focus on how to measure the 'fitness' of the r
 
 Key pre-requisites.
 
-Python 3.6
+Install Python 3
 
+`sudo apt install python3-pip python3-dev`
+
+Install Jupyter
+
+`pip install jupyter`
 
 
 ### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
