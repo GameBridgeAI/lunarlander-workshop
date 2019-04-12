@@ -48,7 +48,9 @@ Install Python3, Pip3, iPython3, Python3 Tkinter,
 `sudo apt install python3-pip python3-dev ipython3 python3-tk`
 
 Now install NPM, NodeJS
+
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+
 `sudo apt-get install -y nodejs nodejs-legacy`
 
 Install OpenAI Gym Pre-req
