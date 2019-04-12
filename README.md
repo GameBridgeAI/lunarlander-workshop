@@ -13,9 +13,9 @@ In addition there is a particular focus on how to measure the 'fitness' of the r
 
 ### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
 
-Install Python3, Pip3 and iPython3
+Install Python3, Pip3, iPython3 and Python3 Tkinter
 
-`sudo apt install python3-pip python3-dev ipython3`
+`sudo apt install python3-pip python3-dev ipython3 python3-tk`
 
 Now add to your `.bashrc` file
 
@@ -41,6 +41,16 @@ Now some specific environments (only box2d is required)
 `pip3 install 'gym[atari]'`
 
 `pip3 install 'gym[classic_control]'`
+
+Now the notebook requirements
+
+`pip3 install numpy torch matplotlib JSAnimation tensorflow`
+
+Enable progress bar extensions
+
+`pip3 install ipywidgets`
+`jupyter nbextension enable --py widgetsnbextension`
+
 
 ### JupyterHub - Remote Server Ubuntu Linux 18.04 (Chromebook/WebBrowser)
 Follow these steps to install on a remotely hostly machine 
