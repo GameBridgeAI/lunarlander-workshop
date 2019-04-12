@@ -49,6 +49,7 @@ Now the notebook requirements
 Enable progress bar extensions
 
 `pip3 install ipywidgets`
+
 `jupyter nbextension enable --py widgetsnbextension`
 
 
