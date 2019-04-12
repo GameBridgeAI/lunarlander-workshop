@@ -11,19 +11,25 @@ In addition there is a particular focus on how to measure the 'fitness' of the r
 
 ## Installation
 
-Key pre-requisites.
+### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
 
-Install Python 3
+Install Python3, Pip3 and iPython3
 
-`sudo apt install python3-pip python3-dev`
+`sudo apt install python3-pip python3-dev ipython3`
+
+Now add to your `.bashrc` file
+
+`export PATH=$PATH:~/.local/bin/`
 
 Install Jupyter
 
-`pip install jupyter`
+`pip3 install jupyter`
+
+Install OpenAI Gym Pre-req
+
+`sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
 
 
-### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
-Follow these steps to install on a local machine 
 
 ### JupyterHub - Remote Server Ubuntu Linux 18.04 (Chromebook/WebBrowser)
 Follow these steps to install on a remotely hostly machine 
