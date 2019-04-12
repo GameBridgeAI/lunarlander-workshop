@@ -31,11 +31,15 @@ Install OpenAI Gym Pre-req
 
 
 Install OpenAI Gym itself, this is the minimal install
+
 `pip3 install gym`
 
 Now some specific environments (only box2d is required)
+
 `pip3 install 'gym[box2d]'`
+
 `pip3 install 'gym[atari]'`
+
 `pip3 install 'gym[classic_control]'`
 
 ### JupyterHub - Remote Server Ubuntu Linux 18.04 (Chromebook/WebBrowser)
