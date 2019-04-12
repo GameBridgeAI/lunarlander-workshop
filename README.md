@@ -30,6 +30,13 @@ Install OpenAI Gym Pre-req
 `sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
 
 
+Install OpenAI Gym itself, this is the minimal install
+`pip3 install gym`
+
+Now some specific environments (only box2d is required)
+`pip3 install 'gym[box2d]'`
+`pip3 install 'gym[atari]'`
+`pip3 install 'gym[classic_control]'`
 
 ### JupyterHub - Remote Server Ubuntu Linux 18.04 (Chromebook/WebBrowser)
 Follow these steps to install on a remotely hostly machine 
