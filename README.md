@@ -17,6 +17,11 @@ Install Python3, Pip3, iPython3 and Python3 Tkinter
 
 `sudo apt install python3-pip python3-dev ipython3 python3-tk`
 
+Install OpenAI Gym Pre-req
+
+`sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
+
+
 Now add to your `.bashrc` file
 
 `export PATH=$PATH:~/.local/bin/`
@@ -25,30 +30,12 @@ Install Jupyter
 
 `pip3 install jupyter`
 
-Install OpenAI Gym Pre-req
+Install OpenAI Gym itself, and some default environments and the notebook requirements
 
-`sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
+`pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets`
 
-
-Install OpenAI Gym itself, this is the minimal install
-
-`pip3 install gym`
-
-Now some specific environments (only box2d is required)
-
-`pip3 install 'gym[box2d]'`
-
-`pip3 install 'gym[atari]'`
-
-`pip3 install 'gym[classic_control]'`
-
-Now the notebook requirements
-
-`pip3 install numpy torch matplotlib JSAnimation tensorflow`
 
 Enable progress bar extensions
-
-`pip3 install ipywidgets`
 
 `jupyter nbextension enable --py widgetsnbextension`
 
