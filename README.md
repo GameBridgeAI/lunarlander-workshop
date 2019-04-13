@@ -110,7 +110,9 @@ export PATH=$PATH:~/.local/bin/
 ```
 
 
-Follow your install specific needs to setup your server. 
+Follow your install specific needs to setup your server. Refer to the followig URL for all the options.  
+
+https://jupyterhub.readthedocs.io/en/latest/getting-started/index.html
 
 Hints: 
 
