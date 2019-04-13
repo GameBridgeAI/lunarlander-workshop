@@ -7,9 +7,16 @@ This repo contains an education workshop developed to allow students to build an
 
 In addition there is a particular focus on how to measure the 'fitness' of the resulting AI. 
 
+## Local Installation MacOs
+### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
 
+```sh
+brew install cmake zlib
+pip3 install 'gym[box2d]'
+pip3 install 'gym[atari]'
+```
 
-## Local Installation
+## Local Installation Linux
 
 ### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
 
