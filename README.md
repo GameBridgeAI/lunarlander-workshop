@@ -8,12 +8,41 @@ This repo contains an education workshop developed to allow students to build an
 In addition there is a particular focus on how to measure the 'fitness' of the resulting AI. 
 
 ## Local Installation MacOs
-### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
+### Jupyter Notebook - Local Machine MacOS
+
+Install brew
+```sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Install Python3, cmake and zlib
+```sh
+brew install python3 cmake zlib
+```
+
+Now install pip3
 
 ```sh
-brew install cmake zlib
+# download and install setuptools
+curl -O https://bootstrap.pypa.io/ez_setup.py
+python3 ez_setup.py
+# download and install pip
+curl -O https://bootstrap.pypa.io/get-pip.py
+python3 get-pip.py
+```
+
+Now install OpenAI Gym, Jupyter notebooks and the rest
+```sh
+pip3 install 'gym'
 pip3 install 'gym[box2d]'
 pip3 install 'gym[atari]'
+pip3 install numpy torch matplotlib JSAnimation tensorflow ipywidgets jupyter
+```
+
+Launch! Now you should be able to open and run the notebooks in this project
+
+```sh
+jupyter notebook
 ```
 
 ## Local Installation Linux
