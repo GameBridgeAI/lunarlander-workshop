@@ -47,15 +47,17 @@ Install Python3, Pip3, iPython3, Python3 Tkinter,
 
 `sudo apt install python3-pip python3-dev ipython3 python3-tk`
 
-Now install NPM, NodeJS
-
-`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
-
-`sudo apt-get install -y nodejs nodejs-legacy`
-
 Install OpenAI Gym Pre-req
 
 `sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
+
+
+Now install NPM, NodeJS
+
+`sudo apt install nodejs`
+
+`sudo apt install npm`
+
 
 Install JupyterHub
 
@@ -76,3 +78,23 @@ Install the OpenAI Gym stuff and our notebook dependancies
 Now add to your .bashrc file
 
 export PATH=$PATH:~/.local/bin/
+
+
+Follow your install specific needs to setup your server. 
+
+Hints: 
+
+* Get an SSL certificate for your install
+* Create a configuration file called  jupyterhub_config.py 
+* Set your certificate details and any login details in the config file (lots of options) 
+* If your server has no physical video card or screen, like say you are running in the cloud, then you need to use *xvfb* when you spawn new notebeook servers
+*Create user accounts
+*Enjoy!
+
+
+## xvfb-run
+
+```bash
+#!/bin/bash
+xvfb-run -a jupyterhub-singleuser $1
+```
