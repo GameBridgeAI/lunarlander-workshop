@@ -78,6 +78,7 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 
+Run all the following as root ```sudo su```
 
 Install JupyterHub
 
@@ -149,4 +150,13 @@ Now edit *jupyterhub_config.py* and change the Spawner command for jupyterhub-si
 
 ```python
 c.Spawner.cmd = ['xvfb-jupyterhub-singleuser']
+```
+## Making jupyterhub start at system start
+
+Read and do this. 
+https://github.com/jupyterhub/jupyterhub/wiki/Run-jupyterhub-as-a-system-service#ubuntudebian-anaconda3-with-systemd
+
+Then 
+```sh
+sudo systemctl enable jupyterhub
 ```
