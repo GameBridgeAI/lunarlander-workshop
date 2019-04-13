@@ -9,7 +9,7 @@ In addition there is a particular focus on how to measure the 'fitness' of the r
 
 
 
-## Installation
+## Local Installation
 
 ### Jupyter Notebook - Local Machine Ubuntu Linux 18.04 (Not Chromebook)
 
@@ -51,7 +51,7 @@ Enable progress bar extensions
 jupyter nbextension enable --py widgetsnbextension
 ```
 
-
+## Server Installation
 ### JupyterHub - Remote Server Ubuntu Linux 18.04 (Chromebook/WebBrowser)
 Follow these steps to install on a remotely hostly machine 
 
