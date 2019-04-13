@@ -15,29 +15,41 @@ In addition there is a particular focus on how to measure the 'fitness' of the r
 
 Install Python3, Pip3, iPython3 and Python3 Tkinter
 
-`sudo apt install python3-pip python3-dev ipython3 python3-tk`
+```sh
+sudo apt install python3-pip python3-dev ipython3 python3-tk
+```
 
 Install OpenAI Gym Pre-req
 
-`sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
+```sh
+sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb
+```
 
 
 Now add to your `.bashrc` file
 
-`export PATH=$PATH:~/.local/bin/`
+```sh
+export PATH=$PATH:~/.local/bin/
+```
 
 Install Jupyter
 
-`pip3 install jupyter`
+```sh
+pip3 install jupyter
+```
 
 Install OpenAI Gym itself, and some default environments and the notebook requirements
 
-`pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets`
+```sh
+pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets
+```
 
 
 Enable progress bar extensions
 
-`jupyter nbextension enable --py widgetsnbextension`
+```sh
+jupyter nbextension enable --py widgetsnbextension
+```
 
 
 ### JupyterHub - Remote Server Ubuntu Linux 18.04 (Chromebook/WebBrowser)
@@ -45,39 +57,57 @@ Follow these steps to install on a remotely hostly machine
 
 Install Python3, Pip3, iPython3, Python3 Tkinter, 
 
-`sudo apt install python3-pip python3-dev ipython3 python3-tk`
+```sh
+sudo apt install python3-pip python3-dev ipython3 python3-tk
+```
 
 Install OpenAI Gym Pre-req
 
-`sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb`
+```sh
+sudo apt-get install -y zlib1g-dev libjpeg-dev cmake swig python-pyglet python3-opengl libboost-all-dev libsdl2-dev libosmesa6-dev patchelf ffmpeg xvfb
+```
 
 
 Now install NPM, NodeJS
 
-`sudo apt install nodejs`
+```sh
+sudo apt install nodejs
+```
 
-`sudo apt install npm`
+```sh
+sudo apt install npm
+```
 
 
 Install JupyterHub
 
-`python3 -m pip install jupyterhub`
+```sh
+python3 -m pip install jupyterhub
+```
 
 Install HTTP Proxy
 
-`sudo npm install -g configurable-http-proxy`
+```sh
+sudo npm install -g configurable-http-proxy
+```
 
 Install Notebook
 
-`python3 -m pip install notebook`
+```sh
+python3 -m pip install notebook
+```
 
 Install the OpenAI Gym stuff and our notebook dependancies
 
-`pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets`
+```sh
+pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets
+```
 
-Now add to your .bashrc file
+Now add to your `.bashrc` file
 
+```sh
 export PATH=$PATH:~/.local/bin/
+```
 
 
 Follow your install specific needs to setup your server. 
@@ -88,13 +118,27 @@ Hints:
 * Create a configuration file called  jupyterhub_config.py 
 * Set your certificate details and any login details in the config file (lots of options) 
 * If your server has no physical video card or screen, like say you are running in the cloud, then you need to use *xvfb* when you spawn new notebeook servers
-*Create user accounts
-*Enjoy!
+* Create user accounts
+* Enjoy!
 
 
-## xvfb-run
+## Running with xvfb on a cloud server. 
 
+Create a file called xvfb-jupyterhub-singleuser, edit
+```sh
+touch ~/.local/bin/xvfb-jupyterhub-singleuser
+nano ~/.local/bin/xvfb-jupyterhub-singleuser
+```
+
+
+Add the following code to the file 
 ```bash
 #!/bin/bash
 xvfb-run -a jupyterhub-singleuser $1
 ```
+
+Now make it executable
+``sh
+chmod +x ~/.local/bin/xvfb-jupyterhub-singleuser
+```
+
