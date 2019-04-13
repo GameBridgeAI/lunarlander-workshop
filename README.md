@@ -143,3 +143,8 @@ Now make it executable
 chmod +x ~/.local/bin/xvfb-jupyterhub-singleuser
 ```
 
+Now edit *jupyterhub_config.py* and change the Spawner command for jupyterhub-singleuser to xvfb-jupyterhub-singleuser
+
+```python
+c.Spawner.cmd = ['xvfb-jupyterhub-singleuser']
+```
