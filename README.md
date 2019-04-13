@@ -130,15 +130,16 @@ touch ~/.local/bin/xvfb-jupyterhub-singleuser
 nano ~/.local/bin/xvfb-jupyterhub-singleuser
 ```
 
-
 Add the following code to the file 
+
 ```bash
 #!/bin/bash
 xvfb-run -a jupyterhub-singleuser $1
 ```
 
 Now make it executable
-``sh
+
+```sh
 chmod +x ~/.local/bin/xvfb-jupyterhub-singleuser
 ```
 
