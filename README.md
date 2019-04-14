@@ -77,7 +77,25 @@ pip3 install jupyter
 Install OpenAI Gym itself, and some default environments and the notebook requirements
 
 ```sh
-pip3 install gym 'gym[box2d]' 'gym[atari]' 'gym[classic_control]' numpy torch matplotlib JSAnimation tensorflow ipywidgets
+pip3 install gym 
+pip3 install 'gym[box2d]' 
+pip3 install 'gym[atari]' 
+pip3 install 'gym[classic_control]' 
+```
+
+If you have Nvidia CUDA installed then use GPU version of tensorflow like this
+```sh
+pip3 install tensorflow-gpu
+```
+
+Otherwise install the CPU version
+```sh
+pip3 install tensorflow
+```
+
+Final remaining items. 
+```sh
+pip3 install torch matplotlib JSAnimation ipywidgets
 ```
 
 
