@@ -17,7 +17,7 @@ Install brew
 
 Install Python3, cmake and zlib
 ```sh
-brew install python3 cmake zlib
+brew install python3 cmake zlib libomp
 ```
 
 Now install pip3
